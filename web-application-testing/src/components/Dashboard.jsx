@@ -1,7 +1,6 @@
 import React from 'react';
 
 //My Components
-import Display from './Display';
 
 class Dashboard extends React.Component {
   constructor() {
@@ -18,22 +17,22 @@ class Dashboard extends React.Component {
         <button 
         onClick={this.props.handleScorekeeping}
         name='strike'
-        >Strike: </button>
+        >Strike</button>
 
         <button
         onClick={this.props.handleScorekeeping}
         name='ball'
-        >Ball: </button>
+        >Ball</button>
 
         <button
         onClick={this.props.handleScorekeeping}
         name='hit'
-        >Hit: </button>
+        >Hit</button>
 
         <button
         onClick={this.props.handleScorekeeping}
         name='foul'
-        >Foul: </button>
+        >Foul</button>
       </div>
       </>
     )
