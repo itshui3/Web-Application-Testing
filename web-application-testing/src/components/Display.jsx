@@ -1,20 +1,18 @@
 import React from 'react';
 
-class Display extends React.Component {
-  constructor() {
-    super()
+function Display(props) {
+  console.log(props);
+  return (
+    <div>
+      <h1>At Bat</h1>
+      <h3>Balls: {props.appState.ball}</h3>
+      <h3>Strikes: {props.appState.strike}</h3>
+      <h3>Hits: {props.appState.hit}</h3>
+      <h3>Fouls: {props.appState.foul}</h3>
 
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>At Bat</h1>
-        <h3>Balls</h3>
-        <h3>Strikes</h3>
-      </div>
-    )
-  }
+    </div>
+  )
+  
 
 }
 
